@@ -136,6 +136,15 @@ player
   });
 ```
 
+### Webpack
+You might need to configure webpack to pack the audio files and copy them to output directory. To do so, add the following to your webpack.config.js under 'new CopyWebpackPlugin'.
+
+``` 
+{ from: { glob: "**/*.mp3" } },
+```
+Remember to change .mp3 to the corresponding audio extention that you have.
+
+
 ## API
 
 ### Recorder
